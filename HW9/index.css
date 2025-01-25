@@ -1,0 +1,184 @@
+@font-face {
+    font-family: 'cerapro400';
+    src: url('./font/CeraPro-Regular.ttf') format(truetype); 
+
+}
+@font-face {
+    font-family: 'cerapro500';
+    src: url('./font/CeraPro-Medium.ttf') format(truetype); 
+
+}
+@font-face {
+    font-family: 'cerapro700';
+    src: url('./font/CeraPro-Bold.ttf') format(truetype); 
+
+}
+
+
+
+.container{
+    margin: 0 auto;
+    max-width: 850px;
+    padding: 100px 0;
+}
+.nav{
+   display: flex; 
+   flex-wrap: nowrap;
+   justify-content: space-between;
+   margin-bottom: 30px;
+}
+.nav_left{
+    display: flex;
+    flex-wrap: nowrap;
+    width: 265px;
+    justify-content: space-between;
+}
+.nav_left a{
+    font-family: 'cerapro400';
+    color: #3D3D3D;
+    font-size: 15px;
+    line-height: 16px;
+}
+.nav_left a:hover{
+    font-family: 'cerapro400';
+    font-weight: 700;
+    color: #46A358;
+    border-bottom: 2px solid #46A358;
+    padding-bottom: 7px;
+}
+.nav_right{
+    display: flex;
+    flex-wrap: nowrap;
+    column-gap: 5px;
+}
+.nav_right span{
+    font-family: 'cerapro400';
+    color: #3D3D3D;
+    font-size: 15px;
+    line-height: 16px;
+}
+.cards{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+.card_img{
+    padding: 31px 4px 19px 4px;
+    background-color: #FBFBFB;
+}
+.card_img img{
+    max-width: 250px;
+}
+.card_name{
+    font-family: 'cerapro400';
+    color: #3D3D3D;
+    font-size: 16px;
+    line-height: 16px;
+    padding: 12px 0 6px;
+}
+.card_price{
+    font-family: 'cerapro700';
+    color: #46A358;
+    font-size: 18px;
+    line-height: 18px;
+}
+.card2:hover.card2::before  {
+    content: "";
+    height: 1px;
+    width: 100%;
+    background-color: #46A358;
+    top: 0;
+    left: 0;
+    display: flex;
+    position: absolute;
+}
+.card1:hover.card1::before  {
+    content: "";
+    height: 1px;
+    width: 100%;
+    background-color: #46A358;
+    top: 0;
+    left: 0;
+    display: flex;
+    position: absolute;
+}
+.card3:hover.card3::before  {
+    content: "";
+    height: 1px;
+    width: 100%;
+    background-color: #46A358;
+    top: 0;
+    left: 0;
+    display: flex;
+    position: absolute;
+}
+.card2{
+    position: relative;
+}
+.absolute{
+    display: none;
+    flex-wrap: nowrap;
+    column-gap: 27px;
+    position: absolute;
+    bottom: 55px;
+    left: 70px;
+}
+.card2:hover .absolute{
+    display: flex;
+}
+.card1{
+    position: relative;
+}
+.card1:hover .absolute{
+    display: flex;
+}
+.card3{
+    position: relative;
+}
+.card3:hover .absolute{
+    display: flex;
+}
+
+.card_price_gray{
+    padding-left: 16px;
+    font-family: 'cerapro400';
+    color: #A5A5A5;
+    font-size: 18px;
+    line-height: 16px;
+}
+.card_price_flex{
+    display: flex;
+    flex-wrap: nowrap;
+}
+.card_price_position{
+    display: none;
+    position: relative;
+}
+.card_price_position svg{
+    position: absolute;
+    left: 17px;
+    top: 9px;
+}
+.card3:hover .card_price_position{
+    display: flex;
+}
+.card3:hover .card3_sale{
+    display: flex;
+}
+.card3_sale{
+    justify-content: center;
+    display: none;
+    font-family: 'cerapro500';
+    font-size: 16px;
+    line-height: 16px;
+    color: #FFFFFF;
+    background-color: #46A358;
+    width: 80px;
+    padding: 7px 0;
+    position: absolute;
+    left: 0px;
+    top: 14px;
+}
+.card3{
+    position: relative;
+}
