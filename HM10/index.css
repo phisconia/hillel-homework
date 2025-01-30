@@ -1,0 +1,188 @@
+@font-face {
+    font-family: 'cerapro400';
+    src: url('./font/CeraPro-Regular.ttf') format(truetype); 
+
+}
+@font-face {
+    font-family: 'cerapro500';
+    src: url('./font/CeraPro-Medium.ttf') format(truetype); 
+
+}
+@font-face {
+    font-family: 'cerapro700';
+    src: url('./font/CeraPro-Bold.ttf') format(truetype); 
+
+}
+@font-face {
+    font-family: 'cerapro900';
+    src: url('./font/CeraPro-Black.ttf') format(truetype); 
+
+}
+
+.container{
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 100px 0;
+}
+.navigation{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(70, 163, 88, 0.5) ;
+    padding-bottom: 17px;
+}
+
+
+.nav_login{
+    background-color: #46a358;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    column-gap: 4px;
+    padding: 7px 17px;
+    border-radius: 6px;
+}
+.nav_login button{
+    background-color: #46A358;
+    font-family: 'cerapro500';
+    color: #FFFFFF;
+    font-size: 16px;
+    line-height: 20px;
+}
+.nav_button{
+    display: flex;
+    flex-wrap: nowrap;
+    column-gap: 45px;
+    align-items: center;
+}
+.nav_button a{
+    color: #3D3D3D;
+    font-family: 'cerapro400';
+    font-size: 16px;
+    line-height: 20px;
+}
+.banner{
+    margin-top: 12px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    background-color: #F5F5F5;
+}
+.banner_text{
+    padding: 68px 0 85px 43px;
+}
+.banner_text h2{
+    font-family: 'cerapro500';
+    font-size: 14px;
+    line-height: 16px;
+    text-transform: uppercase;
+    color: #3D3D3D;
+}
+.banner_text h1{
+    font-family: 'cerapro900';
+    font-size: 70px;
+    line-height: 70px;
+    padding: 7px 0 5px;
+    text-transform: uppercase;
+}
+.h1_notgreen{
+    color:#3D3D3D;
+}
+.h1_green{
+    color: #46A358;
+}
+.banner_text p{
+    color: #727272;
+    font-family: 'cerapro400';
+    padding-bottom: 44px;
+    font-size: 14px;
+    line-height: 24px;
+}
+.banner_text button{
+    border-radius: 6px;
+    padding: 10px 26px;
+    background-color: #46A358;
+    color: #FFFFFF;
+    font-family: 'cerapro700';
+    font-size: 16px;
+    line-height: 20px;
+}
+.banner_img{
+    position: relative;
+}
+.plant_small img{
+    max-width: 135px;
+    position: absolute;
+    bottom: 23px;
+    left: 51px;
+}
+
+.nav_button a:hover{
+    color: #3D3D3D;
+    font-family: 'cerapro700';
+
+}
+.nav_plant{
+    position: relative;
+}
+.nav_plant:hover.nav_plant::after  {
+    content: "";
+    height: 3px;
+    width: 100%;
+    background-color: #46A358;
+    bottom: -26px;
+    left: 0;
+    display: flex;
+    position: absolute;
+}
+.nav_list{
+    background-clip: content-box;
+    background-color: #EDF6EE;
+    width: 190px;
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    padding-top: 31px;
+    z-index: 2;
+}
+.nav_list_first{
+    left: -55px;
+}
+.nav_plant:hover .nav_list_first{
+    display: flex;
+}
+.nav_list_second{
+    top: 0;
+    left: 150px;
+    padding-left: 42px;
+    width: 235px;
+}
+.nav_hover_second:hover .nav_list_second{
+    display: flex;
+}
+
+.nav_color_hover li:hover{
+    background-color: #1A712A;
+}
+.nav_color_hover a{
+line-height: 35px;
+
+}
+.nav_hover_second{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 17px 0 14px;
+}
+.nav_plant svg{
+    fill: #EDF6EE;
+}
+.nav_hover_second:hover > a{
+    color: #EDF6EE;
+    font-family: 'cerapro700';
+}
+.nav_hover_second:hover > svg {
+    fill: #FFFFFF;
+}
