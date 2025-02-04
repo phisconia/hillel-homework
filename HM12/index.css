@@ -1,0 +1,503 @@
+.content1110{
+    max-width: 900px;
+    margin: 30px auto;
+    position: relative;
+    height: 850px;
+}
+.button{
+    text-decoration: none;
+}
+.table{
+    height: 6px;
+    width: 900px;
+    position: absolute;
+    background: #004D7F;
+    top: 644px;
+    border-radius: 30px;
+}
+.machinetop{
+    height: 150px;
+    width: 600px;
+    background: #95ddff;
+    position: absolute;
+    z-index: 1;
+    left: 150px;
+    border-radius: 20px 20px 40px 40px;
+    border: 6px solid #004D7F;
+}
+.machinebottom{
+    height: 150px;
+    width: 600px;
+    background: #95ddff;
+    position: absolute;
+    z-index: 1;
+    top: 500px;
+    left: 150px;
+    border-radius: 20px 20px 0 0 ;
+    border: 6px solid #004D7F;
+}
+.machinebottomlight{
+    width: 588px;
+    height: 40px;
+    background: rgba(198,238,255,0.95);
+    border-radius: 20px 20px 0 0 ;
+    border-bottom: 6px solid #004D7F;
+}
+.machinetoplight{
+    width: 520px;
+    height: 30px;
+    background: rgba(198,238,255,0.95);
+    border-radius: 0 0 20px 20px;
+    border: 6px solid #004D7F;
+    position: absolute;
+    top: 144px;
+    left: 190px;
+    z-index: 1;
+}
+.machinemedium{
+    width: 440px;
+    height: 360px;
+    border: 6px solid #004D7F;
+    position: absolute;
+    top: 168px;
+    left: 230px;
+    background: #538ce3;
+}
+.redbutton{
+    background: #ff4520;
+    height: 60px;
+    width: 30px;
+    position: absolute;
+    right: 176px;
+    top: 15px;
+    margin-right: -50px;
+    transition: all ease-in-out;
+    z-index: 0;
+    border: 6px solid #004D7F;
+    border-radius: 0 10px 10px 0 ;
+}
+
+
+@keyframes redbutton {
+    0%{
+        right: 176px;
+    }
+    25%{
+        right: 186px;
+    }
+    75%{
+        right: 186px;
+    }
+    100%{
+        right: 176px;
+    }
+}
+
+.holderdark1, .holderdark2{
+    width: 130px;
+    height: 45px;
+    background: #7cb0ff;
+    position: absolute;
+    border: 6px solid #004D7F;
+    z-index: 1;
+}
+.holderdark1{
+    top: 169px;
+    left: 270px;
+}
+.holderdark2{
+    top: 169px;
+    left: 500px;
+}
+.holderlight1, .holderlight2{
+    width: 130px;
+    height: 45px;
+    background: rgba(198,238,255,0.95);
+    position: absolute;
+    border: 6px solid #004D7F;
+    border-radius: 0 0 15px 15px;
+    z-index: 1;
+}
+.holderlight1{
+    top: 207px;
+    left: 270px;
+}
+.holderlight2{
+    top: 207px;
+    left: 500px;
+}
+.holderspout1, .holderspout2{
+    width: 50px;
+    height: 26px;
+    background: rgba(198,238,255,0.95);
+    position: absolute;
+    border: 6px solid #004D7F;
+    border-radius: 0 0 10px 10px;
+    z-index: 1;
+}
+.holderspout1{
+    top: 246px;
+    left: 310px;
+}
+.holderspout2{
+    top: 246px;
+    left: 541px;
+}
+
+.holdergrip1, .holdergrip2{
+    width: 145px;
+    height: 30px;
+    background: #50a1ff;
+    position: absolute;
+    border: 6px solid #004D7F;
+    z-index: 1;
+
+}
+.holdergrip1{
+    top: 200px;
+    left: 195px;
+    border-radius: 10px 0 0 10px;
+    transform-origin: right;
+}
+.holdergrip2{
+    top: 200px;
+    left: 564px;
+    border-radius: 0 10px 10px 0;
+    transform-origin: left;
+}
+
+
+@keyframes holdergrip {
+    0%{
+        transform: rotateY(0deg);
+    }
+    50%{
+        transform: rotateY(120deg);
+    }
+    100%{
+        transform: rotateY(0deg);
+    }
+}
+
+.gripshadow1, .gripshadow2{
+    width: 30px;
+    height: 28px;
+    background: #2774c8;
+    position: absolute;
+    z-index: 1;
+}
+.gripshadow1{
+    top: -5px;
+    left: -5px;
+    border-radius: 10px;
+    border: 6px solid #004D7F;
+}
+.gripshadow2{
+    top: -5px;
+    left: 109px;
+    border-radius: 10px;
+    border: 6px solid #004D7F;
+}
+
+.cupcup1, .cupcup2{
+    width: 110px;
+    height: 100px;
+    background: #ff8027;
+    position: absolute;
+    border: 6px solid #004D7F;
+    border-radius: 7px 7px 13px 13px;
+    z-index: 1;
+}
+.cupcup1{
+    top: 401px;
+    left: 280px;
+}
+.cupcup2{
+    top: 401px;
+    left: 510px;
+}
+
+.cupcupred1, .cupcupred2{
+    width: 99px;
+    height: 22px;
+    background: #ff4520;
+    position: absolute;
+    border-bottom: 6px solid #004D7F;
+    z-index: 2;
+}
+
+.cupholder1, .cupholder2{
+    width: 30px;
+    height: 50px;
+    background: #538ce3;
+    position: absolute;
+    border: 6px solid #004D7F;
+    border-radius: 0 13px 13px 0;
+    z-index: 1;
+}
+.cupholder1{
+    top: 432px;
+    left: 384px;
+}
+.cupholder2{
+    top: 432px;
+    left: 616px;
+}
+
+
+.manometer{
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    z-index: 2;
+    left: 399px;
+    top: 25px;
+    border-radius: 100%;
+    border: 6px solid #004D7F;
+}
+.indicator{
+    height: 40px;
+    width: 6px;
+    position: absolute;
+    z-index: 2;
+    left: 42px;
+    top: 4px;
+    background: #010002;
+    border-radius: 30px;
+    transform: rotate(-60deg);
+    transform-origin: bottom;
+}
+
+@keyframes indicator {
+    0%{
+        transform: rotate(-60deg);
+    }
+    15%{
+        transform: rotate(60deg);
+    }
+    30%{
+        transform: rotate(-15deg);
+    }
+    45%{
+        transform: rotate(60deg);
+    }
+    60%{
+        transform: rotate(15deg);
+    }
+    75%{
+        transform: rotate(80deg);
+    }
+    100%{
+        transform: rotate(-60deg);
+    }
+}
+
+.screw{
+    height: 10px;
+    width: 10px;
+    position: absolute;
+    z-index: 2;
+    background: #010002;
+    border-radius: 100%;
+    left: 40px;
+    top: 40px;
+}
+
+
+.steam1, .steam2, .steam3, .steam4{
+    width: 10px;
+    height: 35px;
+    background: rgba(198,238,255,0.95);
+    position: absolute;
+    border-radius: 5px;
+    z-index: 0;
+}
+.steam1{
+    top: 410px;
+    left: 297px;
+}
+.steam2{
+    top: 410px;
+    left: 362px;
+}
+.steam3{
+    top: 410px;
+    left: 529px;
+}
+.steam4{
+    top: 410px;
+    left: 592px;
+}
+
+.steam1, .steam3{
+    animation-duration: 2.0s;
+    animation-delay: 0.8s;
+    transition: linear;
+}
+
+
+.steam2, .steam4{
+    animation-duration: 2.0s;
+    animation-delay: 0.5s;
+    transition: linear;
+    transform: rotate(0);
+    transform-origin: 30% 30%;
+
+}
+
+
+@keyframes steamAnimation{
+    0%{
+        top: 410px;
+    }
+    30%{
+        opacity: 0.7;
+    }
+    100%{
+        top: 300px;
+        opacity: 0;
+        transform: rotate(1250deg);
+    }
+}
+
+
+.coffee1, .coffee2{
+    width: 10px;
+    height: 150px;
+    background: saddlebrown;
+    position: absolute;
+    border: 6px solid saddlebrown;
+    border-radius: 5px;
+    z-index: 0;
+}
+
+.coffee1, .coffee2{
+    animation-duration: 4.5s;
+}
+
+@keyframes coffee {
+    0%{
+        top: 90px;
+    }
+    100%{
+        top: 420px;
+    }
+}
+
+.coffee1{
+    top: 90px;
+    left: 330px;
+}
+
+.coffee2{
+    top: 90px;
+    left: 560px;
+}
+
+
+.coffeedot1, .coffeedot2, .coffeedot3, .coffeedot4, .coffeedot5, .coffeedot6{
+    width: 12px;
+    height: 12px;
+    background: #ac7245;
+    position: absolute;
+    border-radius: 5px;
+    z-index: 0;
+    transition: linear;
+    animation-duration: 4.3s;
+}
+@keyframes dot {
+    from{
+        top: 254px;
+    }
+    to{
+        top: 410px;
+    }
+}
+.coffeedot1{
+    top: 254px;
+    left: 325px;
+}
+.coffeedot2{
+    top: 254px;
+    left: 335px;
+}
+.coffeedot3{
+    top: 254px;
+    left: 330px;
+}
+.coffeedot4{
+    top: 254px;
+    left: 555px;
+}
+.coffeedot5{
+    top: 254px;
+    left: 565px;
+}
+.coffeedot6{
+    top: 254px;
+    left: 560px;
+}
+.coffeedot1, .coffeedot4{
+    animation-delay: 0.3s;
+}
+.coffeedot2, .coffeedot5{
+    animation-delay: 0.1s;
+}
+.coffeedot3, .coffeedot6{
+    animation-delay: 0.9s;
+}
+
+
+.coffeedotAnimation{
+    animation-name: dot;
+    animation-iteration-count: 2;
+}
+
+.steamAnimation{
+    animation-name: steamAnimation;
+    animation-iteration-count: 4;
+}
+.coffeeAnimation{
+    animation-name: coffee;
+    animation-iteration-count: 2;
+}
+.indicatorAnimation{
+    animation-name: indicator;
+    animation-duration: 10s;
+}
+.holderAnimation {
+    animation-name: holdergrip;
+    animation-duration: 10s;
+}
+.redbuttonAnimation {
+    animation-name: redbutton;
+    animation-duration: 10s;
+}
+
+.hasAnimation {
+    animation-play-state: paused;
+}
+.button{
+    position: absolute;
+    height: 50px;
+    width: 200px;
+    background: #ff4520;
+    border-radius: 10px;
+    bottom: 120px;
+    left: 350px;
+}
+.onbutton{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    margin: 16px 0 0 44px;
+    letter-spacing: 0.1em;
+}
+.button:hover{
+    background: #004D7F;
+    transition: all ease-in-out 0.3s;
+}
+.onbutton:hover{
+    color: #ff4520;
+}

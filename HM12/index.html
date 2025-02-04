@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./index.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="content1110">
+        <div class="machine">
+            <div class="table"></div>
+            <div class="machinetop"></div>
+            <div class="machinetoplight"></div>
+            <div class="machinemedium"></div>
+            <div class="machinebottom hasAnimation">
+                <div class="machinebottomlight"></div>
+            </div>
+            <div class="holder1">
+                <div class="holderdark1"></div>
+                <div class="holderlight1"></div>
+                <div class="holderspout1"></div>
+                <div class="holdergrip1 hasAnimation holderAnimation">
+                    <div class="gripshadow1"></div>
+                </div>
+            </div>
+            <div class="holder2">
+                <div class="holderdark2"></div>
+                <div class="holderlight2"></div>
+                <div class="holderspout2"></div>
+                <div class="holdergrip2 hasAnimation holderAnimation">
+                    <div class="gripshadow2"></div>
+                </div>
+            </div>
+            <div class="cup1">
+                <div class="cupcup1">
+                    <div class="cupcupred1"></div>
+                </div>
+                <div class="cupholder1"></div>
+            </div>
+            <div class="cup2">
+                <div class="cupcup2">
+                    <div class="cupcupred2"></div>
+                </div>
+    
+                <div class="cupholder2"></div>
+            </div>
+            <div class="redbutton hasAnimation redbuttonAnimation"></div>
+            <div class="manometer">
+                <div class="indicator hasAnimation indicatorAnimation"></div>
+                <div class="screw"></div>
+            </div>
+            <div class="coffee1 hasAnimation coffeeAnimation"></div>
+            <div class="coffee2 hasAnimation coffeeAnimation"></div>
+            <div class="coffeedot">
+                <div class="coffeedot1 hasAnimation coffeedotAnimation"></div>
+                <div class="coffeedot2 hasAnimation coffeedotAnimation"></div>
+                <div class="coffeedot3 hasAnimation coffeedotAnimation"></div>
+                <div class="coffeedot4 hasAnimation coffeedotAnimation"></div>
+                <div class="coffeedot5 hasAnimation coffeedotAnimation"></div>
+                <div class="coffeedot6 hasAnimation coffeedotAnimation"></div>
+            </div>
+            <div class="steam">
+                <div class="steam1 hasAnimation steamAnimation"></div>
+                <div class="steam2 hasAnimation steamAnimation"></div>
+                <div class="steam3 hasAnimation steamAnimation"></div>
+                <div class="steam4 hasAnimation steamAnimation"></div>
+            </div>
+        </div>
+        <div class="button" id="start">
+            <a href="#" class="onbutton" >make coffee</a>
+        </div>
+    </div>
+    
+    </body>
+    
+    <script>
+        let start = document.getElementById('start');
+        let animation = document.querySelectorAll('.hasAnimation')
+        const amnimationClasses = ["steamAnimation",
+            "coffeedotAnimation",
+            "coffeeAnimation",
+            "indicatorAnimation",
+            "holderAnimation",
+            "redbuttonAnimation"];
+        start.addEventListener('click', startFunction);
+        function startFunction() {
+            animation.forEach(e => {
+                e.style.animationPlayState = 'running';
+            });
+            setTimeout(() => {
+                animation.forEach(e => {
+                    for (let name of e.classList) {
+                        e.style.animationPlayState = 'paused';
+                       if (amnimationClasses.includes(name)) {
+                           e.classList.remove(name)
+                           setTimeout(() => {
+                               e.classList.add(name)
+                           },50)
+                       }
+                    }
+                })
+            }, 10500);
+        }
+    
+    </script>
+</body>
+</html>
