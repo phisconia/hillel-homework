@@ -1,0 +1,40 @@
+
+.container{
+    margin: 50px 0 0 50px;
+}
+.checkbox{
+    opacity: 0;
+    transition-duration: 1s;
+}
+.label{
+    height: 50px;
+    width: 100px;
+    border-radius: 30px;
+    background-color: rgba(0, 255, 255, 0.592);
+    display: block;
+    position: relative;
+    transition-duration: 1s;
+}
+.label::before{
+    content: "";
+    position: absolute;
+    height: 34px;
+    width: 34px;
+    background-color: black;
+    border-radius: 100%;
+    top: 8px;
+    right: 10px;
+    box-shadow: rgba(0, 0, 0, 0.5) 0 0 15px;
+    z-index: 2;
+    display: block;
+    transition: 1s;
+}
+
+.checkbox:checked ~ label{
+    background-color: rgba(211, 211, 211, 0.448);
+    transition-duration: 1s;
+}
+.checkbox:checked ~ label::before{
+    transition-duration: 3s;
+    left: 10px;
+}
